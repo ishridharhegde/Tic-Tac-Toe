@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.shridhar.tictactoe.MainActivity">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/childlayout2"
+        >
+
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block11"
+            android:onClick="b11Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick" />
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block12"
+            android:layout_toRightOf="@+id/block11"
+            android:onClick="b12Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick"
+
+            />
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block13"
+            android:layout_toRightOf="@+id/block12"
+            android:onClick="b13Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick"
+
+            />
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block21"
+            android:layout_below="@+id/block11"
+            android:onClick="b21Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick"
+
+            />
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block22"
+            android:layout_below="@+id/block12"
+            android:layout_toRightOf="@+id/block21"
+            android:onClick="b22Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick"
+
+            />
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block23"
+            android:layout_toRightOf="@+id/block22"
+            android:layout_below="@+id/block13"
+            android:onClick="b23Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick"
+
+            />
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block31"
+            android:layout_below="@+id/block21"
+            android:onClick="b31Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick"
+
+            />
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block32"
+            android:layout_below="@+id/block22"
+            android:layout_toRightOf="@+id/block31"
+            android:onClick="b32Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick"
+
+            />
+
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:id="@+id/block33"
+            android:layout_toRightOf="@+id/block32"
+            android:layout_below="@+id/block23"
+            android:onClick="b33Clicked"
+            android:text=""
+            android:textSize="@dimen/text_size"
+
+
+            tools:ignore="OnClick"
+
+            />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="RESET GAME"
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textColor="#ffffff"
+        android:onClick="reset"
+        android:padding="10sp"
+        android:background="@drawable/buttonborder"
+        android:layout_marginBottom="10dp"
+
+        tools:ignore="OnClick" />
+
+
+
+
+</RelativeLayout>
+
+

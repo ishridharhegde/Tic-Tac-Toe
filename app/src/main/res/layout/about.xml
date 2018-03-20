@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shridhar.tictactoe.MainOptions">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about"
+        android:textSize="30dp"
+        android:text="About"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonshape"
+        android:padding="15dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/about"
+        android:id="@+id/scrolltext"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:fontFamily="monospace"
+                android:layout_below="@+id/para1"
+                android:id="@+id/rules"
+                android:autoLink="web"
+
+                android:text="Tic Tac Toe is by far one of the most popular game that we play for leisure.\nThis project is a small project to recreate the game on your smartphone. There thousands of apps up there in the market, among which this is also an app developing its featuress day by day.\n App icon credits: https://www.flaticon.com\nCreated by:\nShridhar Nagesh\nmanushya.mruga@gmail.com\nTwitter --> @ShridharHegde29"
+
+                />
+
+
+            <Button
+                android:id="@+id/back"
+                android:text="◀"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonborder"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:gravity="center"
+                android:shadowRadius="2"
+                android:layout_below="@+id/rules"
+                android:onClick="goback"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

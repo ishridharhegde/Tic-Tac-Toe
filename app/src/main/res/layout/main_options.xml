@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shridhar.tictactoe.MainOptions">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameheader"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:text="TIC TAC TOE"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonshape"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/optionsscroll"
+        android:layout_below="@+id/gameheader"
+        android:layout_centerHorizontal="true"
+        >
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameheader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        >
+
+    <Button
+        android:id="@+id/angry_btn"
+        android:layout_marginTop="15dp"
+        android:text="play 3×3"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonborder"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:onClick="playGame"
+        android:layout_centerHorizontal="true"
+        />
+
+        <Button
+            android:id="@+id/play4"
+            android:layout_marginTop="15dp"
+            android:text="play 4×4"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonborder"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:onClick="play4"
+            android:layout_below="@+id/angry_btn"
+            android:layout_centerHorizontal="true"
+            />
+
+    <Button
+        android:id="@+id/how"
+        android:text="Help"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonborder"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/play4"
+        android:onClick="howtoplay"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/about"
+            android:text="ABOUT"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonborder"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_below="@+id/how"
+            android:onClick="about"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+
+            tools:ignore="OnClick" />
+
+
+        <Button
+            android:id="@+id/quit"
+            android:text="quit"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonborder"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_below="@+id/about"
+            android:onClick="quit"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+
+            tools:ignore="OnClick" />
+
+
+</RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

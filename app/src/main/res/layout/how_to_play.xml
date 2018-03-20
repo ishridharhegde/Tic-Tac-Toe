@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shridhar.tictactoe.MainOptions">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:textSize="30dp"
+        android:text="how to play this game ?"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonshape"
+        android:padding="5dp"
+
+        />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:id="@+id/scrolltext"
+        android:layout_centerHorizontal="true"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:fontFamily="monospace"
+            android:id="@+id/para1"
+
+
+            android:text=" You probably already know how to play Tic-Tac-Toe. It's a really simple game, right? That's what most people think. But if you really wrap your brain around it, you'll discover that Tic-Tac-Toe isn't quite as simple as you think!
+\nTic-Tac -Toe (along with a lot of other games) involves looking ahead and trying to figure out what the person playing against you might do next. "
+
+            />
+
+       <TextView
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:textSize="15dp"
+           android:textColor="#ffffff"
+           android:fontFamily="monospace"
+           android:layout_below="@+id/para1"
+           android:id="@+id/rules"
+
+
+           android:text=" Rule One:\n The game is played on a grid that's 3 squares by 3 squares.
+\n\nRule Two:\n You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
+\n\nRule Three:\n The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+\n\nRule Four:\n When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie. "
+
+           />
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trick"
+                android:layout_below="@+id/rules"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:fontFamily="monospace"
+
+
+                android:text=" To beat the opponent, you need to make use of a little bit of strategy. Strategy means figuring out what you need to do to win.
+\nPart of your strategy is trying to figure out how to get three Xs in a row. The other part is trying to figure out how to stop the opponent from getting three Os in a row.
+\nAfter you put an X in a square, you start looking ahead. Where's the best place for your next X? You look at the empty squares and decide which ones are good choices—which ones might let you make three Xs in a row.
+\nYou also have to watch where the opponent puts its O. That could change what you do next. If the opponent gets two Os in a row, you have to put your next X in the last empty square in that row, or the opponent will win. You are forced to play in a particular square or lose the game.
+\nIf you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. You may not win, but at least you'll tie. "
+
+                />
+
+            <Button
+                android:id="@+id/goback"
+                android:text="◀"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonborder"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:gravity="center"
+                android:shadowRadius="2"
+                android:layout_below="@+id/trick"
+                android:onClick="goback"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                tools:ignore="OnClick"
+                android:padding="10dp"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
